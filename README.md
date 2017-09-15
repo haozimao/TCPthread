@@ -10,6 +10,5 @@
 
 3 在win下转化hex会出现带L的情况,采用了笨办法,转化成列表,去掉
 
-        del sizelist[0:2]    #去头0x 去尾L
-        
-        sizelist.pop()
+        del sizelist[0:2]    #去头0x 
+        sizelist.pop()       #去尾L
