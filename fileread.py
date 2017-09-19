@@ -45,7 +45,7 @@ def sqlread(): #sql读取
   db = pymysql.connect(host='127.0.0.1',
     port=3306,
     user='hh',
-    passwd='hu19950615',
+    passwd='',#此处为数据库的密码
     db='data')
   cursor = db.cursor()
   sql="SELECT * FROM DATAinfo  "
