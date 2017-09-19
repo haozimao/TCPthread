@@ -79,7 +79,7 @@ def sqlread():  # sql读取
     db = pymysql.connect(host='127.0.0.1',
                          port=3306,
                          user='hh',
-                         passwd='hu19950615',
+                         passwd='',
                          db='data')
     cursor = db.cursor()
     sql = "SELECT * FROM DATAinfo  "
@@ -162,7 +162,7 @@ def writeinfo(showId, showtype, versionnum, formatDate):
     db = pymysql.connect(host='127.0.0.1',
                          port=3306,
                          user='root',
-                         passwd='hu19950615',
+                         passwd='',
                          db='data')
     cursor = db.cursor()
     sql = "INSERT INTO Userinfo(showId,showtype,versionnum, formatDate) \
@@ -182,7 +182,7 @@ def creatsql():
     db = pymysql.connect(host='127.0.0.1',
                          port=3306,
                          user='root',
-                         passwd='hu19950615',
+                         passwd='',
                          db='data'
                          )
     cursor = db.cursor()
